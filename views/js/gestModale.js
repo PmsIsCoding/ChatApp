@@ -1,0 +1,14 @@
+$(function(){
+    $('.notif-icon').on('click',function(){
+        $('.notifs').addClass('d-block')
+        $('.notifs').removeClass('d-none')
+        $('.fond-flou').addClass('d-block')
+        $('.fond-flou').removeClass('d-none')
+    })
+    $('.fond-flou').on('click',function(){
+        $('.notifs').addClass('d-none')
+        $('.notifs').removeClass('d-block')
+        $('.fond-flou').addClass('d-none')
+        $('.fond-flou').removeClass('d-block')
+    })
+})

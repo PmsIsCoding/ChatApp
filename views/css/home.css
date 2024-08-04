@@ -1,0 +1,167 @@
+*{
+    font-family: "poppins-regular" !important;
+    user-select: none;
+}
+body{
+    overflow: hidden;
+}
+.title{
+    font-family: "poppins-bold" !important;
+} 
+
+.img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    /* border: 1px #d3d3d3 solid; */
+    margin-right: 10px;
+    background-color: #d3d3d3;
+}
+.img img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+.user-name{
+    font-size: 15px;
+}
+.notif{
+    width: 30px;
+}
+ul li{
+    margin-right: 10px;
+}
+.main{
+    padding: 30px;
+}
+.fenetre-discussion{
+    margin-right: 50px;
+    height: 75vh !important;
+}
+.fenetre{
+    overflow-y: auto;
+    /* position: relative; */
+    border-radius: 20px;
+}
+/* La barre de défilement entière */
+.fenetre::-webkit-scrollbar{
+    width: 10px; /* Largeur de la scrollbar */
+}
+
+/* La partie de la scrollbar qui est cliquée pour défiler */
+.fenetre::-webkit-scrollbar-thumb {
+    background-color: rgba(184, 184, 184, 0.541); /* Couleur de la barre */
+    border-radius: 6px; /* Rayon de bordure pour arrondir les coins */
+    border: 3px solid rgba(255, 255, 255, 0.3); /* Bordure autour de la barre */
+}
+
+/* La piste de la scrollbar */
+.fenetre::-webkit-scrollbar-track {
+    background: rgba(71, 143, 95, 0.425); /* Couleur de fond de la piste */
+    border-radius: 6px; /* Rayon de bordure pour arrondir les coins */
+}
+
+.searchDisc input::placeholder{
+    color: #d3d3d3;
+}
+.searchDisc{
+    padding: 10px;
+}
+.discussion{
+    padding: 10px;
+}
+.discussion:hover{
+    background: rgb(48, 48, 48);
+    cursor:pointer;
+}
+.info{
+    margin-top: 20px;
+}
+.lastMess{
+    font-size: 13px;
+}
+.message-env{
+    border-radius: 15px;
+    width: 50%;
+    padding: 15px;
+    margin-bottom: 20px;
+    margin-left: 50%;
+    font-size: 14px;
+}
+.message-rec{
+    border-radius: 15px;
+    width: 50%;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+.dateMessage{
+    font-size: 8px;
+    font-family: "poppins-bold";
+    padding-left: 80%;
+}
+.fenetre-messages{
+    position: relative;
+    height: 65vh !important;
+    border-radius: 15px 15px 0px 0px;
+    padding: 10px;
+}
+.infos-discussion{
+    position: sticky;
+    top: 15px;
+    left: 0px;
+    height: 20%;
+    width: 40%;
+    margin-top: 15px;
+    border-radius: 10px;
+    backdrop-filter:  blur(2px);
+    background: #31375e70;
+    display: none;
+    padding: 15px;
+}
+.info-username{
+    font-size: 15px;
+}
+.messageContent::placeholder{
+    color: #d3d3d3;
+}
+.sendMessage{
+    padding: 15px;
+    border-radius: 0px 0px 15px 15px  ;
+    background: #e6e4e4;
+    /* margin-top: 55%; */
+}
+.messageContent{
+    resize: none;
+    height: 15px;
+}
+.messages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.messages>span{
+    font-size: 30px;
+}
+.notifs{
+    padding: 20px;
+    border-radius: 10px;
+    overflow-y: auto;
+    width: 30%;
+    height: 50%;
+    background-color: red;
+    position: absolute !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.fond-flou{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.425);
+    backdrop-filter: blur(3px);
+}
